@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import Layout from './layout'
+const Layout = React.lazy(() =>
+  import(/* webpackChunkName: "Layout" */ './Layout')
+)
 import Spinner from './spinner'
 import { Suspense } from 'react'
 

@@ -1,11 +1,11 @@
 import React, { CSSProperties } from 'react'
-import { HashLoader } from 'react-spinners'
+import { HeartSpinner  } from "react-spinners-kit";
 import { centeredContent, fullScreen } from '../css'
 
 export default function() {
   return (
     <div style={{ ...centeredContent, ...fullScreen }}>
-      <HashLoader color='white' size={1.5} />
+       <HeartSpinner size={50} color="#686769" />
     </div>
   )
 }
